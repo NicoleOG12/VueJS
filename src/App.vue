@@ -1,20 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-  <MyButton paragraph="palavras">
+  <MyButton label="Um botão"/>
+  <LoopComponent></LoopComponent>
 
-  </MyButton>
 </template>
 
 <script>
-
-import HelloWorld from './components/HelloWorld.vue'
 import MyButton from './components/MyButton.vue'
+import LoopComponent from './components/LoopComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld, MyButton
+    MyButton, LoopComponent
   }
 }
 </script>

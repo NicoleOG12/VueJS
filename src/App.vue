@@ -1,17 +1,15 @@
 <template>
-  <MyButton label="Um botão"/>
-  <LoopComponent></LoopComponent>
+  <AreaTrapeze></AreaTrapeze>
 
 </template>
 
 <script>
-import MyButton from './components/MyButton.vue'
-import LoopComponent from './components/LoopComponent.vue';
+import AreaTrapeze from './components/exercicios/AreaTrapeze.vue';
 
 export default {
   name: 'App',
   components: {
-    MyButton, LoopComponent
+    AreaTrapeze
   }
 }
 </script>

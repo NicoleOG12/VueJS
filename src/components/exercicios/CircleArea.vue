@@ -11,6 +11,7 @@
      <div v-for="(circle, index) in circleList" :key="index">
          <p>Raio: {{ circle.radius }}</p>
          <p>Área: {{ circle.area }}</p>
+         <br>
      </div>
      <br>
      <br>
@@ -29,10 +30,9 @@
              const area = Math.PI * Math.pow(this.radius, 2);
              this.circleList.push({
                  radius: this.radius,
-                 area: area.toFixed(2) // 2 casas decimais
+                 area: area.toFixed(2)
              });
   
-             // Limpar 
              this.radius = '';
          }
      }
@@ -41,7 +41,7 @@
   
  <style>
  body{
-     background-color: black;
+     
  }
  
  p{

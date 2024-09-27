@@ -1,30 +1,33 @@
 <template>
-  <AreaTrapeze></AreaTrapeze>
-  <EquilateralTriangle></EquilateralTriangle>
-  <CircleArea></CircleArea>
-
+  <div>
+    <nav>
+      <router-link to="/Home"> Home</router-link>
+      <router-link to="/AreaTrapeze"> Trapeze</router-link>
+      <router-link to="/CircleArea"> Circle</router-link>
+      <router-link to="/EquilateralTriangle"> Triângulo Equilatero</router-link>
+      <router-link to="/SobreNos"> Sobre Nós</router-link>
+    </nav>
+  </div>
+  <router-View></router-View>
 </template>
 
 <script>
-import AreaTrapeze from './components/exercicios/AreaTrapeze.vue';
-import CircleArea from './components/exercicios/CircleArea.vue';
-import EquilateralTriangle from './components/exercicios/EquilateralTriangle.vue';
 
 export default {
   name: 'App',
-  components: {
-    AreaTrapeze, EquilateralTriangle, CircleArea
+
   }
-}
+
 </script>
 
 <style>
 #app {
+  background-image:url(https://images.app.goo.gl/tUkbf2CLc8V7gjVS6);
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>

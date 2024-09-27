@@ -11,6 +11,7 @@
      <div v-for="(triangle, index) in triangleList" :key="index">
          <p>Lado: {{ triangle.side }}</p>
          <p>Área: {{ triangle.area }}</p>
+         <br>
      </div>
      <br>
      <br>

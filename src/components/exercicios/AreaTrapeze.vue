@@ -1,6 +1,6 @@
 <template>
      <div>
-        <p>Trapezio</p>
+        <p>Trapézio</p>
      </div>
     <form @submit.prevent="addTrapeze">
          <input type="text" v-model.number="B" placeholder="Base maior">
@@ -15,6 +15,7 @@
          <p>Base Menor: {{ trapeze.b }}</p>
          <p>Altura: {{ trapeze.Height}}</p>
          <p>Área: {{ trapeze.area }}</p>
+         <br>
      </div>
      <br>
      <br>
@@ -51,7 +52,7 @@
   
  <style>
  body{
-     background-color: black;
+    
  }
  p{
      color: aliceblue;

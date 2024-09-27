@@ -1,15 +1,19 @@
 <template>
   <AreaTrapeze></AreaTrapeze>
+  <EquilateralTriangle></EquilateralTriangle>
+  <CircleArea></CircleArea>
 
 </template>
 
 <script>
 import AreaTrapeze from './components/exercicios/AreaTrapeze.vue';
+import CircleArea from './components/exercicios/CircleArea.vue';
+import EquilateralTriangle from './components/exercicios/EquilateralTriangle.vue';
 
 export default {
   name: 'App',
   components: {
-    AreaTrapeze
+    AreaTrapeze, EquilateralTriangle, CircleArea
   }
 }
 </script>
